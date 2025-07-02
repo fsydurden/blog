@@ -1,0 +1,116 @@
+/* Global Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+header h1 a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+header h1 a:hover {
+  color: #4dabf7;
+}
+
+/* Blog List */
+.blog-list article {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.blog-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-list h2 a {
+  text-decoration: none;
+  color: #4dabf7;
+  transition: color 0.2s ease-in-out;
+}
+
+.blog-list h2 a:hover {
+  color: #74c0fc;
+}
+
+.blog-list .excerpt {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* Blog Post Page */
+.blog-post h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.blog-post p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Links */
+a {
+  color: #4dabf7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 0 15px;
+  }
+
+  header h1 a {
+    font-size: 2rem;
+  }
+
+  .blog-list h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog-post h2 {
+    font-size: 1.6rem;
+  }
+}

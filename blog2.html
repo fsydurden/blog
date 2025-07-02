@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>From Procedural to OOP: Rebuilding My Coffee Machine in Python</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">My Minimal Blog</a></h1>
+  </header>
+
+  <main class="blog-post">
+    <h2>From Procedural to OOP: Rebuilding My Coffee Machine in Python</h2>
+    <p><em>Posted on July 1, 2025, 9:07 PM</em></p>
+
+    <p>A few weeks ago, I built a simple coffee machine program in Python. It ran in the console, let you choose between espresso, latte, and cappuccino, asked for coins, and served your drink if everything checked out. It was all written using functions, a few dictionaries, and some <code>if-else</code> logic. It worked fine.</p>
+
+    <p>But something about it felt messy. It was the kind of code that does the job, but you’re secretly hoping no one asks to look at it. And if I wanted to add a new drink or payment option, I knew I’d be hunting through long blocks of logic, breaking things in the process.</p>
+
+    <p>So I decided to rebuild it — this time using object-oriented programming (OOP).</p>
+
+    <h3>Why OOP?</h3>
+    <p>I wanted to learn how to write cleaner, more scalable code. I also wanted to understand how real software is structured. OOP seemed like a natural next step. Instead of writing code around what the machine <em>does</em>, I started thinking in terms of what the machine <em>is</em>. That changed everything.</p>
+
+    <h3>Breaking It Down into Classes</h3>
+    <p>I split the entire program into four key classes:</p>
+
+    <h4>1. <code>Menu</code></h4>
+    <p>This class stores the available drinks and their required ingredients. It also helps validate if a user-requested drink is actually on the menu.</p>
+
+    <h4>2. <code>CoffeeMaker</code></h4>
+    <p>This class is responsible for tracking the machine's resources — water, milk, and coffee. It checks if there’s enough for the requested drink and handles the logic of “making” the coffee (which, in my case, means updating the resource levels and printing a message).</p>
+
+    <h4>3. <code>MoneyMachine</code></h4>
+    <p>This handles all money-related logic — asking the user for coins, calculating total inserted, checking if it's enough, and keeping track of the total money collected.</p>
+
+    <h4>4. <code>main.py</code></h4>
+    <p>This is the main control loop where everything comes together. It continuously prompts the user, processes input, and calls the right methods from the other classes.</p>
+
+    <h3>The Experience of Refactoring</h3>
+    <p>At first, it was a bit intimidating to turn a few hundred lines of procedural code into separate classes. But once I started separating responsibilities — one class for drinks, one for resources, one for payments — the logic actually became easier to follow. It was no longer a giant chain of conditions. It felt like I was building small machines that each knew how to do one thing well.</p>
+
+    <h3>What I Learned</h3>
+    <ul>
+      <li>How to structure a Python program using classes</li>
+      <li>The power of encapsulation and clear responsibilities</li>
+      <li>Why separating data from behavior makes your code easier to work with</li>
+      <li>That OOP isn’t just for big projects — even a coffee machine becomes better with it</li>
+    </ul>
+
+    <h3>What’s Next</h3>
+    <p>Now that I have the core logic in place, I’m thinking of adding a simple GUI using Tkinter or maybe creating a web version using Flask. I also want to add features like refilling resources, saving machine state, or even letting users customize their drinks.</p>
+
+    <h3>Final Thoughts</h3>
+    <p>This was a small project, but I learned a lot from it. Rewriting something you’ve already built is a great way to deepen your understanding of programming concepts. If you've built something procedurally in Python, try giving it an OOP makeover. It will challenge how you think about structure, and the end result will likely be cleaner, more organized, and easier to scale.</p>
+
+    <p>If you’re curious, you can check out the code here:<br />
+      <strong>GitHub:</strong> <a href="https://github.com/fsydurden/coffe_machine_using_OOP" target="_blank">https://github.com/fsydurden/coffe_machine_using_OOP</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; DEV Blog</p>
+  </footer>
+</body>
+</html>
