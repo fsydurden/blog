@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building a Quiz Bank in Python with OOP</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">DEV Blog</a></h1>
+  </header>
+
+  <main class="blog-post">
+    <h2>Building a Quiz Bank in Python with OOP</h2>
+    <p><em>Posted on July 2, 2025</em></p>
+
+    <p>After rebuilding my coffee machine in Python using OOP, I wanted to take the concept further with another small but meaningful project. So I built a <strong>quiz bank system</strong> — a console-based app that delivers multiple-choice questions, scores the user, and provides feedback at the end.</p>
+
+    <p>But I didn’t just want to hardcode a bunch of questions into a loop. I wanted something modular, something I could easily extend later. So I structured the entire thing using object-oriented programming.</p>
+
+    <h3>Why OOP for a Quiz App?</h3>
+    <p>At first, a quiz may seem simple: just a list of questions and some logic to check answers. But when you look deeper, there are clearly separate components:</p>
+    <ul>
+      <li>Questions (data)</li>
+      <li>Quiz logic (ask, check, track score)</li>
+      <li>Inputs and outputs (user interaction)</li>
+    </ul>
+    <p>It made sense to break them into dedicated classes.</p>
+
+    <h3>The Core Classes</h3>
+    <p>I split the project into three key classes:</p>
+
+    <h4>1. <code>Question</code></h4>
+    <p>This class stores the question text and the correct answer. Each instance represents one multiple-choice question.</p>
+
+    <h4>2. <code>QuizBrain</code></h4>
+    <p>This is the core engine. It handles the logic for displaying questions, checking answers, and keeping track of the user's score and progress.</p>
+
+    <h4>3. <code>main.py</code></h4>
+    <p>This is the driver script. It builds the question bank, initializes the <code>QuizBrain</code> instance, and starts the quiz loop.</p>
+
+    <h3>How It Works</h3>
+    <p>The app loops through each question in the bank, displays it, takes the user’s answer, and provides immediate feedback. At the end, it shows the final score. The questions can easily be loaded from a list or even an external API in the future.</p>
+
+    <h3>What I Learned</h3>
+    <ul>
+      <li>How to use classes to represent real-world objects like questions and quizzes</li>
+      <li>Encapsulation — keeping data and logic tightly grouped</li>
+      <li>How OOP makes it easier to expand a program (e.g., adding question categories, levels, or different input sources)</li>
+    </ul>
+
+    <h3>Possible Improvements</h3>
+    <ul>
+      <li>Support for external JSON or CSV input for questions</li>
+      <li>GUI using Tkinter</li>
+      <li>Timer or difficulty settings</li>
+      <li>Track user history or progress</li>
+    </ul>
+
+    <h3>Final Thoughts</h3>
+    <p>This project was small but solid. It helped me apply OOP principles to something more interactive and user-focused. It’s easy to build procedural scripts, but structuring your logic cleanly from the beginning sets the foundation for future expansion. That’s what I’m trying to practice.</p>
+
+    <p>Curious to try it? Check out the full code here:<br />
+      <strong>GitHub:</strong> <a href="https://github.com/fsydurden/Quiz_bank_using_OOP" target="_blank">https://github.com/fsydurden/Quiz_bank_using_OOP</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DEV Blog</p>
+  </footer>
+</body>
+</html>
